@@ -1768,6 +1768,10 @@ ul, li {
         margin-bottom: 8px;
     }
 
+    .hand-phone {
+        max-width: 430px;
+    }
+
     /* section__core-features */
     .core-features .container {
         width: 430px;
@@ -1824,7 +1828,6 @@ ul, li {
     .header__title {
         font-size: 44px;
         line-height: 60px;
-        width: 100%;
     }
 
     .header__text {
@@ -1833,6 +1836,10 @@ ul, li {
     }
 
     /* section__quality-features */
+    .quality-features .container {
+        width: 330px;
+    }
+
     .pre-title {
         line-height: 36px;
         text-align: start;
@@ -1851,7 +1858,7 @@ ul, li {
     }
 
     .core-features .container {
-        width: 430px;
+        width: 330px;
     }
 
     .core-features__title {
@@ -1884,6 +1891,10 @@ ul, li {
     /* section__core-apps */
     .core-apps__text {
         text-align: start;
+    }
+
+    .hand-phone {
+        max-width: 330px;
     }
 
     /* section__functions */
@@ -1920,7 +1931,7 @@ ul, li {
 
     /* section__plan */
     .plan .container {
-        width: 430px;
+        width: 330px;
     }
 
     .plan-items__content-wrapper {
@@ -1930,6 +1941,10 @@ ul, li {
     }
 
     .plan-items {
+        max-width: 330px;
+    }
+
+    .plan__title {
         max-width: 330px;
     }
 
@@ -1960,7 +1975,7 @@ ul, li {
     }
 
     .questions .container {
-        width: 430px;
+        width: 330px;
     }
 
     .questions-items {
@@ -1969,7 +1984,7 @@ ul, li {
 
     /* footer */
     .footer .container {
-        width: 430px;
+        width: 330px;
     }
 
     .footer-items-wrapper {
@@ -2007,6 +2022,10 @@ ul, li {
         max-width: 300px;
     }
 
+    .hand-phone {
+        max-width: 300px;
+    }
+
     /* footer */
     .footer .container {
         width: 300px;
@@ -2021,6 +2040,10 @@ ul, li {
     /* section__core-features */
     .core-features .container {
         width: 290px;
+    }
+
+    .phone-schedule-img {
+        max-width: 290px;
     }
 
     /* section__plan */
@@ -2038,6 +2061,10 @@ ul, li {
     }
 
     .questions-items {
+        max-width: 290px;
+    }
+    
+    .hand-phone {
         max-width: 290px;
     }
 

@@ -41,13 +41,13 @@ $(".arrow-next").click((e) => {
 });
 
 // carousel
-$(window).on('resize', function() { 
-    if ($(window).width() < 992) { 
-        $('.quality-features-items-wrapper').bxSlider({ 
-            controls: false 
-        }) 
-    } 
-});
+// $(window).on('resize', function() { 
+//     if ($(window).width() < 992) { 
+//         $('.quality-features-items-wrapper').bxSlider({ 
+//             controls: false 
+//         }) 
+//     } 
+// });
 
 // anchors
 $('#home-link').on('click', function(e){

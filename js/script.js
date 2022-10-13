@@ -77,3 +77,15 @@ $(window).on('scroll', function(){
 })
 
 // modal for gat started and signup
+$('.modal-form-overlay').on('click', function(e){
+    if($(e.target).closest('.modal-form').length == 0){$(this).fadeOut();
+    }
+})
+
+$('.form-close').on('click', function(){
+    $(this).parents('.modal-form-overlay').fadeOut();
+})
+
+$('.modal-button').on('click', function(){
+    $('.modal-form-overlay').fadeIn()
+})

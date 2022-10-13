@@ -977,6 +977,10 @@ ul, li {
     position: relative;
 }
 
+.questions-items:hover {
+    cursor: pointer;
+}
+
 .questions-items::after {
     content: '';
     height: 3px;
@@ -1105,6 +1109,7 @@ ul, li {
     position: fixed;
     right: 50px;
     bottom: 50px;
+    display: none;
 }
 
 #up:hover {
@@ -1112,11 +1117,74 @@ ul, li {
 }
 
 #up span {
+    
     position: absolute;
     font-size: 40px;
     font-weight: 700;
     color: #FFFFFF;
     transform: rotate(-90deg) translate(-20%, 16px);
+}
+
+/* modal form */
+.modal-form-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.35);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    display: none;
+}
+
+.modal {
+    max-width: 550px;
+    text-align: center;
+    background-color: white;
+    padding: 50px 40px;
+    border-radius: 25px;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-form__title {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #02073E;
+}
+
+.modal-form-margin:first-of-type {
+    margin-bottom: 20px;
+}
+
+.modal-form-margin:last-of-type {
+    margin-bottom: 35px;
+}
+
+.form-style {
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 1px solid #009B4D;
+    max-width: 350px;
+    width: 100%;
+
+    color: #02073E;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.form-close {
+    position: absolute;
+    font-size: 30px;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
 }
 
 /* animations */

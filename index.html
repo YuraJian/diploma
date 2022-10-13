@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Landguru</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Heebo:wght@500&family=Lexend+Deca&family=Montserrat&family=Poppins:wght@700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="web icon" href="./img/1.header/logo.svg">
 </head>
 <body>
     <header class="header">
+        <div class="container-for-img">
+            <img src="./img/1.header/background/hBg1.png" alt="background" class="header-bg-img h-bg-item-1">
+            <img src="./img/1.header/background/hBg2.png" alt="background" class="header-bg-img h-bg-item-2">
+            <img src="./img/1.header/background/hBg3.png" alt="background" class="header-bg-img h-bg-item-3">
+            <img src="./img/1.header/background/hBg4.png" alt="background" class="header-bg-img h-bg-item-4">
+            <img src="./img/1.header/background/hBg5.png" alt="background" class="header-bg-img h-bg-item-5">
+            <img src="./img/1.header/background/hBg6.png" alt="background" class="header-bg-img h-bg-item-6">
+            <img src="./img/1.header/background/pattern.png" alt="background" class="header-bg-img h-bg-item-7">
         <section class="header-full-nav">
             <div class="container flex">
                 <div class="logo flex">
@@ -20,31 +30,42 @@
                         Landguru
                     </p>
                 </div>
-                <div class="header-nav">
-                    <ul class="header__ul flex">
-                        <li class="header__li">
-                            <a href="#" class="header__link">
-                                Home
-                            </a>
-                        </li>
-                        <li class="header__li">
-                            <a href="#" class="header__link">
-                                Adversite
-                            </a>
-                        </li>
-                        <li class="header__li">
-                            <a href="#" class="header__link">
-                                Supports
-                            </a>
-                        </li>
-                        <li class="header__li">
-                            <a href="#" class="header__link">
-                                Contact
-                            </a>
-                        </li>
-                    </ul>
+                <div class="menu">
+                    <input type="checkbox" class="checkbox-menu">
+                    <div class="check-wrapper">
+                        <div class="check"></div>
+                        <div class="check"></div>
+                        <div class="check"></div>
+                    </div>
+                    <nav class="header-nav">
+                            <ul class="header__ul flex">
+                                <li class="header__li">
+                                    <a href="#" class="header__link" id="home-link">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="header__li">
+                                    <a href="#" class="header__link" id="adversite-link">
+                                        Adversite
+                                    </a>
+                                </li>
+                                <li class="header__li">
+                                    <a href="#" class="header__link" id="supports-link">
+                                        Supports
+                                    </a>
+                                </li>
+                                <li class="header__li">
+                                    <a href="#" class="header__link" id="contacts-link">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="button button--hover button-none modal-button">
+                                Get Started
+                            </button>
+                    </nav>
                 </div>
-                <button class="button">
+                <button class="button button--hover button-none-menu">
                     Get Started
                 </button>
             </div>
@@ -52,29 +73,35 @@
         <section class="header-full-content">
             <div class="container-for-img">
                 <div class="container">
-                    <div class="header-content">
-                        <h1 class="header__title">
-                            Experience your ultimate mobile application
-                        </h1>
-                        <p class="header__text">
-                            Get your blood tests delivered at let home collect sample from the victory of the managments that supplies best design system guidelines ever.
-                        </p>
-                        <div class="flex video flex-start">
-                            <button class="button color-bg">
-                                Get Started
-                            </button>
-                            <img src="./img/1.header/play.svg" alt="play" class="play-img">
-                            <p class="video__text">
-                                Watch Video
+                    <div class="header-content flex">
+                        <div class="text-center">
+                            <h1 class="header__title">
+                                Experience your ultimate mobile application
+                            </h1>
+                            <p class="header__text">
+                                Get your blood tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.
                             </p>
-                        </div>
-                        <div class="flex flex-start">
-                            <p class="sponsor__text">
-                                Sponsored by:
-                            </p>
-                            <img src="./img/1.header/paypal.png" alt="paypal" class="sponsor-img">
-                            <img src="./img/1.header/google.png" alt="google" class="sponsor-img">
-                            <img src="./img/1.header/dropbox.png" alt="dropbox" class="sponsor-img">
+                            <div class="flex video flex-start">
+                                <button class="button color-bg modal-button">
+                                    Get Started
+                                </button>
+                                <a href="https://www.youtube.com/shorts/2HXurvD-ljY" target="_blank" class="play-img__link">
+                                    <img src="./img/1.header/play.svg" alt="play" class="play-img">
+                                </a>
+                                <p class="video__text">
+                                    Watch Video
+                                </p>
+                            </div>
+                            <div class="flex sponsor flex-start">
+                                <p class="sponsor__text">
+                                    Sponsored by:
+                                </p>
+                                <div class="flex-images flex">
+                                    <img src="./img/1.header/paypal.png" alt="paypal" class="sponsor-img">
+                                    <img src="./img/1.header/google.png" alt="google" class="sponsor-img">
+                                    <img src="./img/1.header/dropbox.png" alt="dropbox" class="sponsor-img">
+                                </div>
+                            </div>
                         </div>
                         <div class="absolute-img-phone">
                             <img src="./img/1.header/phone.png" alt="phone" class="phone-img">
@@ -83,6 +110,7 @@
                 </div>
             </div>
         </section>
+        </div>
     </header>
     <main class="main">
         <section class="quality-features">
@@ -93,8 +121,8 @@
                 <h3 class="title">
                     Meet exciting feature of app
                 </h3>
-                <div class="quality-features-items-wrapper flex">
-                    <div class="quality-features-items">
+                <div class="quality-features-items-wrapper flex screen-1920px">
+                    <div class="quality-features-items align-items-center">
                         <div class="quality-features-items__img">
                             <img src="./img/2.quality-features/parabola.png" alt="parabola">
                         </div>
@@ -105,7 +133,7 @@
                             Get your blood tests delivered at home collect a sample from the your blood tests.
                         </p>
                     </div>
-                    <div class="quality-features-items">
+                    <div class="quality-features-items align-items-center">
                         <div class="quality-features-items__img">
                             <img src="./img/2.quality-features/square.png" alt="square">
                         </div>
@@ -116,7 +144,7 @@
                             Get your blood tests delivered at home collect a sample from the your blood tests.
                         </p>
                     </div>
-                    <div class="quality-features-items">
+                    <div class="quality-features-items align-items-center">
                         <div class="quality-features-items__img">
                             <img src="./img/2.quality-features/stopwatch.png" alt="stopwatch">
                         </div>
@@ -128,6 +156,43 @@
                         </p>
                     </div>
                 </div>
+                <div class="empty">
+                    <div class="screen-800px">
+                        <div class="quality-features-items">
+                            <div class="quality-features-items__img">
+                                <img src="./img/2.quality-features/parabola.png" alt="parabola">
+                            </div>
+                            <h5 class="quality-features-items__title">
+                                Vector Editing
+                            </h5>
+                            <p class="quality-features-items__text">
+                                Get your blood tests delivered at home collect a sample from the your blood tests.
+                            </p>
+                        </div>
+                        <div class="quality-features-items">
+                            <div class="quality-features-items__img">
+                                <img src="./img/2.quality-features/square.png" alt="square">
+                            </div>
+                            <h5 class="quality-features-items__title">
+                                Customize & Monitoring
+                            </h5>
+                            <p class="quality-features-items__text">
+                                Get your blood tests delivered at home collect a sample from the your blood tests.
+                            </p>
+                        </div>
+                        <div class="quality-features-items align-items-center">
+                            <div class="quality-features-items__img">
+                                <img src="./img/2.quality-features/stopwatch.png" alt="stopwatch">
+                            </div>
+                            <h5 class="quality-features-items__title">
+                                Quality & short-period
+                            </h5>
+                            <p class="quality-features-items__text">
+                                Get your blood tests delivered at home collect a sample from the your blood tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="core-features">
@@ -136,7 +201,7 @@
                     <div class="core-features-full-content__img">
                         <img src="./img/3.core-features/phone-schedule.png" alt="phone-schedule" class="phone-schedule-img">
                     </div>
-                    <div>
+                    <div class="core-features-content-wrapper">
                         <div class="core-features-content">
                             <h4 class="pre-title core-features__pre-title">
                                 Core features
@@ -155,7 +220,7 @@
                                         Smart Features
                                     </h5>
                                     <p class="core-features-items__text">
-                                        Get your blood tests delivered at let home collect sample from the victory of the managments. Your blood tests.
+                                        Get your blood tests delivered at let home collect sample from the victory of the managements. Your blood tests.
                                     </p>
                                 </div>
                             </div>
@@ -168,7 +233,7 @@
                                         Secure Contents
                                     </h5>
                                     <p class="core-features-items__text">
-                                        Get your blood tests delivered at let home collect sample from the victory of the managments. Your blood tests.
+                                        Get your blood tests delivered at let home collect sample from the victory of the managements. Your blood tests.
                                     </p>
                                 </div>
                             </div>
@@ -177,7 +242,7 @@
                 </div>
             </div>
         </section>
-        <section class="quality-apps">
+        <section class="quality-apps" id="home">
             <div class="container">
                 <div class="quality-apps-preview-content">
                     <h4 class="pre-title">
@@ -190,79 +255,79 @@
                 <div class="quality-apps-grid">
                     <div class="grid-items flex align-items-start">
                         <div class="grid-items__img">
-                            <img src="./img/4.quality-apps/hourglass.png" alt="hourglass">
+                            <img src="./img/4.quality-apps/hourglass.png" alt="hourglass" class="grid-items__img--size">
                         </div>
                         <div class="grid-items__text-title">
                             <h5 class="grid-items__title">
                                 Smart Features
                             </h5>
                             <p class="grid-items__text">
-                                Get your blood tests delivered at let home collect sample from the victory of the managments.
+                                Get your blood tests delivered at let home collect sample from the victory of the managements.
                             </p>
                         </div>
                     </div>
                     <div class="grid-items flex align-items-start">
                         <div class="grid-items__img">
-                            <img src="./img/4.quality-apps/cup.png" alt="cup">
+                            <img src="./img/4.quality-apps/cup.png" alt="cup" class="grid-items__img--size">
                         </div>
                         <div class="grid-items__text-title">
                             <h5 class="grid-items__title">
                                 Fast Performance
                             </h5>
                             <p class="grid-items__text">
-                                Get your blood tests delivered at let home collect sample from the victory of the managments.
+                                Get your blood tests delivered at let home collect sample from the victory of the managements.
                             </p>
                         </div>
                     </div>
                     <div class="grid-items flex align-items-start">
                         <div class="grid-items__img">
-                            <img src="./img/4.quality-apps/cloud.png" alt="cloud">
+                            <img src="./img/4.quality-apps/cloud.png" alt="cloud" class="grid-items__img--size">
                         </div>
                         <div class="grid-items__text-title">
                             <h5 class="grid-items__title">
                                 Unlimited Content
                             </h5>
                             <p class="grid-items__text">
-                                Get your blood tests delivered at let home collect sample from the victory of the managments.
+                                Get your blood tests delivered at let home collect sample from the victory of the managements.
                             </p>
                         </div>
                     </div>
                     <div class="grid-items flex align-items-start">
                         <div class="grid-items__img">
-                            <img src="./img/4.quality-apps/settings.png" alt="settings">
+                            <img src="./img/4.quality-apps/settings.png" alt="settings" class="grid-items__img--size">
                         </div>
                         <div class="grid-items__text-title">
                             <h5 class="grid-items__title">
                                 Ultimate Customization
                             </h5>
                             <p class="grid-items__text">
-                                Get your blood tests delivered at let home collect sample from the victory of the managments.
+                                Get your blood tests delivered at let home collect sample from the victory of the managements.
                             </p>
                         </div>
                     </div>
                     <div class="grid-items flex align-items-start">
                         <div class="grid-items__img">
-                            <img src="./img/4.quality-apps/arrow.png" alt="arrow">
+                            <img src="./img/4.quality-apps/arrow.png" alt="arrow" class="grid-items__img--size">
                         </div>
                         <div class="grid-items__text-title">
                             <h5 class="grid-items__title">
                                 Boost Productivity
                             </h5>
                             <p class="grid-items__text">
-                                Get your blood tests delivered at let home collect sample from the victory of the managments.
+                                Get your blood tests delivered at let home collect sample from the victory of the managements.
                             </p>
                         </div>
                     </div>
                     <div class="grid-items flex align-items-start">
                         <div class="grid-items__img">
-                            <img src="./img/4.quality-apps/message.png" alt="message">
+                            <img src="./img/4.quality-apps/message.png" alt="message" class="grid-items__img--size">
                         </div>
                         <div class="grid-items__text-title">
                             <h5 class="grid-items__title">
                                 Customer Support
                             </h5>
                             <p class="grid-items__text">
-                                Get your blood tests delivered at let home collect sample from the victory of the managments.
+                                Get your blood tests delivered at let home collect sample from the victory of the managements.
                             </p>
                         </div>
                     </div>
@@ -279,17 +344,569 @@
                         Smart Jackpots that you may love this anytime & anywhere
                     </h3>
                     <p class="core-apps__text">
-                        Get your tests delivered at let home collect sample from the victory of the managments that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.
+                        Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.
                     </p>
                     <button class="button blue-bg">
                         Get Started
                     </button>
                 </div>
                 <div class="core-apps-img">
-                    <img src="./img/5.core-apps/apps.png" alt="apps">
+                    <img src="./img/5.core-apps/apps.png" alt="apps" class="apps-image">
+                </div>
+            </div>
+        </section>
+        <section class="functions" id="adversite">
+            <div class="container-for-img">
+                <img src="./img/6.functions/funcBg/fBg1.png" alt="background" class="functions-bg-img f-bg-item-1">
+                <img src="./img/6.functions/funcBg/fBg2.png" alt="background" class="functions-bg-img f-bg-item-2">
+                <img src="./img/6.functions/funcBg/fBg3.png" alt="background" class="functions-bg-img f-bg-item-3">
+                <img src="./img/6.functions/funcBg/fBg4.png" alt="background" class="functions-bg-img f-bg-item-4">
+                <div class="container color-FFF">
+                    <div class="functions__content">
+                        <h4 class="pre-title functions__pre-title color-FFF">
+                            Whats the function
+                        </h4>
+                        <h3 class="title functions__title color-FFF">
+                            Let’s see how it works
+                        </h3>
+                    </div>
+                    <div class="functions-grid">
+                        <div class="functions-grid-items">
+                            <div class="functions-grid-items__number-wrapper">
+                                <p class="functions-grid-items__number">
+                                    01
+                                </p>
+                                <img src="./img/6.functions/arrow1.png" alt="arrow"class="arrow arrow-1">
+                            </div>
+                            <div class="item-max-width">
+                                <h5 class="functions-grid-items__title">
+                                    Set disbursement Instructions
+                                </h5>
+                                <p class="functions-grid-items__text">
+                                    Get your blood tests delivered at home collect a sample from the your blood tests.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="functions-grid-items">
+                            <div class="functions-grid-items__number-wrapper">
+                                <p class="functions-grid-items__number">
+                                    02
+                                </p>
+                                <img src="./img/6.functions/arrow2.png" alt="arrow" class="arrow arrow-2">
+                            </div>
+                            <div class="item-max-width">
+                                <h5 class="functions-grid-items__title">
+                                    Assembly retrieves funds from your account
+                                </h5>
+                                <p class="functions-grid-items__text">
+                                    Get your blood tests delivered at home collect a sample from the your blood tests.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="functions-grid-items">
+                            <div class="functions-grid-items__number-wrapper">
+                                <p class="functions-grid-items__number">
+                                    03
+                                </p>
+                                <img src="./img/6.functions/arrow1.png" alt="arrow" class="arrow arrow-3">
+                            </div>
+                            <div class="item-max-width">
+                                <h5 class="functions-grid-items__title">
+                                    Assembly initiates disbursement
+                                </h5>
+                                <p class="functions-grid-items__text">
+                                    Get your blood tests delivered at home collect a sample from the your blood tests.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="functions-grid-items">
+                            <div class="functions-grid-items__number-wrapper">
+                                <p class="functions-grid-items__number">
+                                    04
+                                </p>
+                            </div>
+                            <div class="item-max-width">
+                                <h5 class="functions-grid-items__title">
+                                    Customer receives funds payment
+                                </h5>
+                                <p class="functions-grid-items__text">
+                                    Get your blood tests delivered at home collect a sample from the your blood tests.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comments" id="contacts">
+            <div class="container">
+                <div class="comments__content">
+                    <h4 class="pre-title">
+                        Testimunial
+                    </h4>
+                    <h3 class="title comments__title">
+                        Meet Client Satisfaction
+                    </h3>
+                </div>
+                <div class="comments-items-wrapper flex">
+                    <div class="comments-items">
+                        <div class="comments-items__rate">
+                            <img src="./img/7.comments/rate.png" alt="stars">
+                        </div>
+                        <h5 class="comments-items__title">
+                            Modern look & trending design
+                        </h5>
+                        <p class="comments-items__text">
+                            Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.
+                        </p>
+                        <div class="comments-person-info flex flex-start">
+                            <div class="person-avatar">
+                                <img src="./img/7.comments/first-avatar.png" alt="avatar">
+                            </div>
+                            <div class="person-info">
+                                <h5 class="person-name">
+                                    Marry Punch
+                                </h5>
+                                <a class="person-link">
+                                    @marry.punch
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-items">
+                        <div class="comments-items__rate">
+                            <img src="./img/7.comments/rate.png" alt="stars">
+                        </div>
+                        <h5 class="comments-items__title">
+                            Design Quality & performance
+                        </h5>
+                        <p class="comments-items__text">
+                            Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.
+                        </p>
+                        <div class="comments-person-info flex flex-start">
+                            <div class="person-avatar">
+                                <img src="./img/7.comments/second-avatar.png" alt="avatar">
+                            </div>
+                            <div class="person-info">
+                                <h5 class="person-name">
+                                    Denny Hilguston
+                                </h5>
+                                <a class="person-link">
+                                    @denny.hil
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comments-items">
+                        <div class="comments-items__rate">
+                            <img src="./img/7.comments/rate.png" alt="stars">
+                        </div>
+                        <h5 class="comments-items__title">
+                            Layout and organized layers
+                        </h5>
+                        <p class="comments-items__text">
+                            Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.
+                        </p>
+                        <div class="comments-person-info flex flex-start">
+                            <div class="person-avatar">
+                                <img src="./img/7.comments/third-avatar.png" alt="avatar">
+                            </div>
+                            <div class="person-info">
+                                <h5 class="person-name">
+                                    Oliver Smith
+                                </h5>
+                                <a class="person-link">
+                                    @oliver.smith
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-arrows flex">
+                    <button class="arrow-prev">
+                        ←
+                    </button>
+                    <button class="arrow-next">
+                        →
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="secure">
+            <div class="container flex">
+                <div class="secure-img">
+                    <img src="./img/8.secure/hand-phone.png" alt="hand-phone" class="hand-phone">
+                </div>
+                <div class="secure__content">
+                    <h4 class="pre-title core-apps__pre-title">
+                        Core features
+                    </h4>
+                    <h3 class="title core-apps__title secure__title">
+                        Secure Payment Transaction System with #1 Ranking
+                    </h3>
+                    <p class="secure__text core-apps__text">
+                        Get your tests delivered at let home collect sample from the victory of the managments that supplies best design system guidelines ever. Get your tests delivered at let home collect sample.
+                    </p>
+                    <button class="button blue-bg">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="plan">
+            <div class="container-for-img">
+                <img src="./img/9.plan/pBg1.png" alt="background" class="plan-bg-img p-bg-item-1">
+                <img src="./img/9.plan/pBg2.png" alt="background" class="plan-bg-img p-bg-item-2">
+                <img src="./img/9.plan/pBg3.png" alt="background" class="plan-bg-img p-bg-item-3">
+                <img src="./img/9.plan/pBg4.png" alt="background" class="plan-bg-img p-bg-item-4">
+                <div class="container">
+                    <div class="plan__content">
+                        <h4 class="pre-title color-FFF">
+                            Whats the function
+                        </h4>
+                        <h3 class="title plan-title color-FFF">
+                            Let’s see how it works
+                        </h3>
+                    </div>
+                    <div class="plan-items-wrapper flex">
+                        <div class="plan-items">
+                            <div class="plan-items__content-wrapper">
+                                <h4 class="plan-items__title">
+                                    Free Plan
+                                </h4>
+                                <p class="plan-items__text">
+                                    For Small teams or office
+                                </p>
+                            </div>
+                            <ul class="plan-items__ul">
+                                <li class="plan-items__li">
+                                    <div class="green-circle">
+                                    </div>
+                                    <p class="plan-li__text">
+                                        Ultimate access to all course, exercises and assessments
+                                    </p>
+                                </li>
+                                <li class="plan-items__li">
+                                    <div class="green-circle">
+                                    </div>
+                                    <p class="plan-li__text">
+                                        Free acess for all kind of exercise corrections with downloads.
+                                    </p>
+                                </li>
+                                <li class="plan-items__li">
+                                    <div class="green-circle">
+                                    </div>
+                                    <p class="plan-li__text">
+                                        Total assessment corrections with free download access system
+                                    </p>
+                                </li>
+                                <li class="plan-items__li">
+                                    <div class="opacity-circle">
+                                    </div>
+                                    <p class="plan-li__text plan-li__text--opacity">
+                                        Unlimited download of courses on the mobile app contents
+                                    </p>
+                                </li>
+                                <li class="plan-items__li">
+                                    <div class="opacity-circle">
+                                    </div>
+                                    <p class="plan-li__text plan-li__text--opacity">
+                                        Download and print courses and exercises in PDF
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="plan-button">
+                                <button class="button color-bg change-bg">
+                                    Signup Now
+                                </button>
+                            </div>
+                        </div>
+                        <div class="plan-items plan-items--padding">
+                            <p class="recommended">
+                                Recommended
+                            </p>
+                            <div class="plan-items__content-wrapper flex flex-start">
+                                <div class="plan-items__content plan-items__content--margin">
+                                    <h4 class="plan-items__title">
+                                        Premium
+                                    </h4>
+                                    <p class="plan-items__text plan-items__text--margin">
+                                        For startup enterprise
+                                    </p>
+                                </div>
+                                <div class="item-flex-end item-modify">
+                                    <p class="starting">
+                                        Starting from
+                                    </p>
+                                    <p class="cost">
+                                        <span>49.99$/</span>mo
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="plan-items__ul">
+                                <li class="plan-items__li">
+                                    <div class="green-circle">
+                                    </div>
+                                    <p class="plan-li__text">
+                                        Ultimate access to all course, exercises and assessments
+                                    </p>
+                                </li>
+                                <li class="plan-items__li">
+                                    <div class="green-circle">
+                                    </div>
+                                    <p class="plan-li__text">
+                                        Free acess for all kind of exercise corrections with downloads.
+                                    </p>
+                                </li>
+                                <li class="plan-items__li">
+                                    <div class="green-circle">
+                                    </div>
+                                    <p class="plan-li__text">
+                                        Total assessment corrections with free download access system
+                                    </p>
+                                </li>
+                                <li class="plan-items__li">
+                                    <div class="green-circle">
+                                    </div>
+                                    <p class="plan-li__text">
+                                        Unlimited download of courses on the mobile app contents
+                                    </p>
+                                </li>
+                                <li class="plan-items__li">
+                                    <div class="green-circle">
+                                    </div>
+                                    <p class="plan-li__text">
+                                        Download and print courses and exercises in PDF
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="plan-button">
+                                <button class="button color-bg change-bg">
+                                    Signup Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <div class="questions-content">
+                    <h4 class="pre-title">
+                        Frequent Question
+                    </h4>
+                    <h3 class="title">
+                        Do you have any question
+                    </h3>
+                </div>
+                <div class="questions-items-wrapper">
+                    <div class="questions-items">
+                        <div class="questions-items__content flex align-items-start flex-start">
+                            <div class="questions-items__circle">
+                                <div class="item-1"></div>
+                                <div class="item-2"></div>
+                            </div>                        
+                            <h4 class="questions-items__title">
+                                How to contact with riders emergency ?
+                            </h4>                            
+                        </div>
+                        <p class="questions-items__text">
+                            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+                        </p>
+                    </div>                    
+                    <div class="questions-items">
+                        <div class="questions-items__content flex align-items-start flex-start">
+                            <div class="questions-items__circle">
+                                <div class="item-1"></div>
+                                <div class="item-2"></div>
+                            </div>                        
+                            <h4 class="questions-items__title">
+                                App installation failed, how to update system information?
+                            </h4>                            
+                        </div>
+                        <p class="questions-items__text">
+                            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+                        </p>
+                    </div>                    
+                    <div class="questions-items">
+                        <div class="questions-items__content flex align-items-start flex-start">
+                            <div class="questions-items__circle">
+                                <div class="item-1"></div>
+                                <div class="item-2"></div>
+                            </div>                        
+                            <h4 class="questions-items__title">
+                                Website reponse taking time, how to improve?
+                            </h4>                            
+                        </div>
+                        <p class="questions-items__text">
+                            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+                        </p>
+                    </div>                    
+                    <div class="questions-items">
+                        <div class="questions-items__content flex align-items-start flex-start">
+                            <div class="questions-items__circle">
+                                <div class="item-1"></div>
+                                <div class="item-2"></div>
+                            </div>                        
+                            <h4 class="questions-items__title">
+                                New update fixed all bug and issues
+                            </h4>                            
+                        </div>
+                        <p class="questions-items__text">
+                            Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home.
+                        </p>
+                    </div>                    
                 </div>
             </div>
         </section>
     </main>
+    <footer class="footer" id="support">
+        <div class="container">
+            <div class="footer-items-wrapper flex align-items-start">
+                <div class="footer-items">
+                    <h3 class="footer__title">
+                        About Us
+                    </h3>
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Support Center
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Customer Support
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Copyright
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Popular Campaign
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h3 class="footer__title">
+                        Our Information
+                    </h3>
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Return Policy
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Site Map
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Store Hours
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h3 class="footer__title">
+                        My Account
+                    </h3>
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Press inquiries
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Social media
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Directories
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Images & B-roll
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Permissions
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h3 class="footer__title">
+                        Policy
+                    </h3>
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Application security
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Software principles
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Unwanted software policy
+                            </a>
+                        </li>
+                        <li class="footer__li">
+                            <a href="#" class="footer__link">
+                                Responsible supply chain
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- up-button -->
+    <div id="up">
+        <span>></span>
+    </div>
+
+    <!-- modal form -->
+    <div class="modal-overlay">
+        <div class="modal">
+            <input type="text" class="name">
+            <input type="email">
+            <button type="submit" class="button modal-form">Submit</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

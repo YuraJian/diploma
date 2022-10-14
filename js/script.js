@@ -4,10 +4,6 @@ $('.questions-items > div').on('click', function(){
     $(this).children('.questions-items__circle').children('.item-2').toggleClass('opacity');
 })
 
-$('.questions-items__text').on('click', function(){
-    $(this).closest('.questions-items__text').fadeOut();
-})
-
 // arrow to move up
 $(window).on('scroll', function(){
     if($(this).scrollTop() > 700){
@@ -41,13 +37,7 @@ $(".arrow-next").click((e) => {
 });
 
 // carousel
-// $(window).on('resize', function() { 
-//     if ($(window).width() < 992) { 
-//         $('.quality-features-items-wrapper').bxSlider({ 
-//             controls: false 
-//         }) 
-//     } 
-// });
+// НЕ СУДЬБА xD Пасхалка)))
 
 // anchors
 $('#home-link').on('click', function(e){
